@@ -9,9 +9,10 @@ branches:
     - source
 script:
   - npm i
-  - npm build
+  - npm run build
 after_script:
   - cd build
+  - echo "999999999.net.cn" > CNAME
   - git init
   - git config user.name "DongyunLee"
   - git config user.email "dongyunli619@gmail.com"
